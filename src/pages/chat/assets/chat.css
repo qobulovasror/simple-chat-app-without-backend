@@ -1,0 +1,70 @@
+/* .display-mode {
+    width: 100%;
+    height: 100%;
+}
+.dark {
+    background-color: #212529;
+}
+.dark > .root {
+    background-color: #212529;
+} */
+
+.cardMain {
+    min-height: 85vh;
+}
+.chat-img {
+    width: 50px;
+    height: 50px;
+}
+.chat-msgs {
+    max-height: 65vh;
+    min-height: 65vh;
+    overflow: hidden auto;
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+.chat-msgs .msg.left .msg-txt{
+    width: 70%;
+    box-shadow: 0 0 4px 0;
+    margin: 4px;
+    border-radius: 10px;
+    color: #fff;
+    background-color: blue;
+}
+.chat-msgs .msg.right .msg-txt{
+    width: 70%;
+    box-shadow: 0 0 4px 0;
+    margin: 4px;
+    border-radius: 10px;
+    border-radius: 10px;
+    border: 0px solid #000;
+}
+.chat-msgs .msg.right{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.chat-msgs .img {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 17px;
+    margin: 10px;
+}
+.chat-msgs .userName {
+    color: rgb(5, 238, 238);
+    font-size: 17px;
+    font-weight: bold;
+}
+.chat-msgs .date {
+    font-size: 12px;
+}
+
+.list-group li{
+    cursor: pointer;
+}
+
+.chat-list {
+    max-height: 65vh;
+    overflow: hidden auto;
+}
