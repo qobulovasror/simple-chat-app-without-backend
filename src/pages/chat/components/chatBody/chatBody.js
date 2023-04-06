@@ -9,7 +9,7 @@ import SendMsgs from "./sendMsgs";
 
 function ChatBody(props) {
   const {selectChat, setSelectChat, userData, getChatList} = props;
-  const [call, setCall] = useState(false)
+  // const [call, setCall] = useState(false)
   const [msgs, setMsgs] = useState([])
   const getChatMessages = async(selectChat)=>{
     const q = query(collection(db, "messages"), where("chatId", "==", selectChat.id), orderBy("createDate", "desc"));
@@ -17,19 +17,22 @@ function ChatBody(props) {
       setMsgs(querySnapshot.docs)
     })
     .catch((err)=>{
-      setCall(true)
+      // setCall(true)
       toast.error(err)
     })
   }
   useEffect(()=>{
     if(!selectChat) return;
-    if(!call) return;
-    const interval = setInterval(() => {
-      getChatMessages(selectChat)
-    }, 5000);
+    getChatMessages(selectChat)
+
+    // update every 5 secund
+    // const interval = setInterval(() => {
+    //   getChatMessages(selectChat)
+    // }, 5000);
     
-    return () => clearInterval(interval);
-  }, [call, selectChat])
+    // return () => clearInterval(interval);
+   
+  }, [selectChat])
 
   return (
     <div className="position-relative ">
@@ -39,6 +42,7 @@ function ChatBody(props) {
         userData={userData}
         getChatList={getChatList}
         setSelectChat={setSelectChat}
+        getChatMessages={getChatMessages}
       />
       <Chatmsgs
         userData={userData}

@@ -2,7 +2,8 @@ import { doc, deleteDoc } from "firebase/firestore";
 import { db } from "../../../../firebase/firebase";
 import { toast } from "react-toastify";
 
-function ChatHeader({selectChat, setSelectChat, msgs,userData, getChatList}) {
+function ChatHeader(props) {
+  const {selectChat, setSelectChat, msgs,userData, getChatList, getChatMessages} = props;
   const deleteChat = async(id)=>{
     // eslint-disable-next-line no-restricted-globals
     if (confirm(`Delete is "${selectChat.name}" chat ?`)) {
@@ -58,7 +59,10 @@ function ChatHeader({selectChat, setSelectChat, msgs,userData, getChatList}) {
           >
           <i className="bx bxs-message-alt-x"></i>
         </button>
-        <button className="btn btn-primary">
+        <button className="btn btn-primary" onClick={getChatMessages}>
+          <i className='bx bx-refresh fs-5'></i>
+        </button>
+        <button className="btn btn-primary ms-1">
           <i className="bx bx-dots-vertical-rounded"></i>
         </button>
       </div>

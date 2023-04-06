@@ -4,7 +4,7 @@ import { collection, addDoc } from "firebase/firestore";
 import { useState } from 'react';
 
 function SendMsgs(props) {
-  const {selectChat, userData} = props;
+  const {selectChat, userData, getChatMessages} = props;
   const [msg, setMsg] = useState("")
   const addChat = async(msgvalue)=>{
     setMsg("")
@@ -16,6 +16,7 @@ function SendMsgs(props) {
         createDate: new Date(),
         ovner: userData.email
       }).then(()=>{
+        getChatMessages(selectChat)
       })
     } catch (err) {
       toast.error(err+' 🙁')
