@@ -1,70 +1,109 @@
-# Getting Started with Create React App
+<!-- Project name -->
+<h1  align="center"  style="font-size: 45px">
+<center>Simple Chat Application</center>
+</h1>
+<hr>
+<!-- Description -->
+<h4 align="center">A CLI program that generates README files for projects</h4>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  <!--menu-->
+  <p align="center">
+  <a href="#key-features-">Key Features</a> •
+  <a href="#technologies-used-">Technologies Used</a> •
+  <a href="#getting-started-">Getting Started</a> •
+  <a href="#license-">License</a> •
+  <a href="#conclusion-">Conclusion</a> •
+</p>
+  
+<!-- You can put pictures, gifs, screenshots or videos for the program here  -->
+![image](https://github.com/qobulovasror/simple-chat-app-without-backend/assets/71517683/468fc7ee-b894-4cfa-a7b5-f91528f48ec9)
+  
+  <!-- About -->
 
-## Available Scripts
+  ## About 📖
+Command line (CLI) program that generates a readme file for your project. The readme file contains instructions for your project. The program is built using NodeJs. You install it globally on your computer and run it at the location of your project. It will then create a Readme file
 
-In the project directory, you can run:
+  
+  <!-- Key Features -->
 
-### `npm start`
+  ## Key Features ✨
+  
+  ---
+  
+  - Chating someone
+  - Create chat
+  - Edit and delete old messege
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<!-- Technologies Used -->
+## Technologies Used 🤖
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+ - **React**
+ - **Firebase**
+ - **npm** or **yarn**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started 👨🏻‍💻
+  ---
+  
+You can run the program via npm or by downloading this repository
 
-### `npm run build`
+### Prerequisites
+  
+  Before you begin, ensure you have met the following requirements:
+- **React**
+- **Firebase**
+- **npm** or **yarn**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  
+### Installation and Configuration 🎯
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  Follow these steps to get the project up and running on your local machine:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  1. **Clone the repository:**
+  
+  ```bash
+  git clone https://github.com/qobulovasror/simple-chat-app-without-backend.git
+  ``` 
+  2. Navigate to the project directory:
 
-### `npm run eject`
+  ```bash
+  cd "simple-chat-app-without-backend"
+  ``` 
+  3. **Install dependencies**
+  ```bash
+  npm i
+  ```
+  4. **Run app**
+  ```bash
+  npm start
+  ```  
+  
+## License 🧾
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+This project is licensed under the [MIT License](LICENSE)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+You are free to:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Use the code for personal or commercial purposes.
+- Modify, distribute, and sublicense the code.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Under the following conditions:
 
-## Learn More
+- You must include the original copyright notice in all copies or substantial portions of the software.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This project is provided "as is", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the software or the use or other dealings in the software
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+  
+  
+<!-- Conclusion -->
 
-### Code Splitting
+## Conclusion 🔚
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Congratulations! You've reached the end of the README file for our project 😊. We hope this documentation has provided you with all the necessary information to understand, install, and contribute to the project effectively.
 
-### Analyzing the Bundle Size
+If you have any questions, feedback, or suggestions, please don't hesitate to reach out to us. Your input is valuable and helps us improve the project for everyone.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Thank you for your interest and support in our project. Happy coding! 🎉
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  
